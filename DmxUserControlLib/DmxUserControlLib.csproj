@@ -34,6 +34,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -48,15 +50,43 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="APC40LedConf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChannelController.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LaunchpadBTProperty.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LaunchpadMap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="APC40LedConf.xaml.cs">
+      <DependentUpon>APC40LedConf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ChannelController.xaml.cs">
+      <DependentUpon>ChannelController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LaunchpadBTProperty.xaml.cs">
+      <DependentUpon>LaunchpadBTProperty.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LaunchpadMap.xaml.cs">
       <DependentUpon>LaunchpadMap.xaml</DependentUpon>
     </Compile>
+    <Page Include="MatriceLedAPC40.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MatriceLedAPC40.xaml.cs">
+      <DependentUpon>MatriceLedAPC40.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -79,6 +109,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\DmxControlLib\DmxControlLib\DmxControlLib.csproj">
+      <Project>{402b66f2-a527-4f74-a7cb-7167bd81a05c}</Project>
+      <Name>DmxControlLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
