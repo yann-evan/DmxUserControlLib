@@ -1,0 +1,67 @@
+﻿<UserControl x:Class="DmxUserControlLib.APC40LedConf"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DmxUserControlLib"
+             mc:Ignorable="d" 
+             d:DesignHeight="auto" d:DesignWidth="auto">
+    <Grid Background="LightGray">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <Label Content="RGB Button Configuration" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Margin="0"/>
+
+        <Label Content="Button type :" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="0"/>
+        <ComboBox x:Name="BT_Type_CB" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="0"/>
+        <Label Content="Groupe :" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Margin="0"/>
+        <ComboBox x:Name="Groupe_Selection" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="2" Margin="0, 0, 0, 4"/>
+
+        <Label Content="On :" Grid.Column="0" Grid.Row="5" Margin="0, 4, 0, 0"/>
+        <Label Content="Flash Type :" Grid.Column="0" Grid.Row="6" Margin="0"/>
+        <ComboBox x:Name="ON_Flashing_Type_CB" Grid.Column="0" Grid.Row="7" Margin="3, 0, 3, 0"/>
+        <Label Content="Flash Speed :" Grid.Column="0" Grid.Row="8" Margin="0"/>
+        <ComboBox x:Name="ON_Flashing_Speed_CB" Grid.Column="0" Grid.Row="9" Margin="3, 0, 3, 0"/>
+        <Label Content="Primary Color :" Grid.Column="0" Grid.Row="10" Margin="0"/>
+        <ComboBox x:Name="ON_Primary_Color_CB" Grid.Column="0" Grid.Row="11" Margin="3, 0, 3, 0"/>
+        <Label Content="Secondary Color :" Grid.Column="0" Grid.Row="12" Margin="0"/>
+        <ComboBox x:Name="ON_Secondary_Color_CB" Grid.Column="0" Grid.Row="13" Margin="0, 0, 0, 4"/>
+
+        <Label Content="Off :" Grid.Column="1" Grid.Row="5" Margin="0, 4, 0, 0"/>
+        <Label Content="Flash Type :" Grid.Column="1" Grid.Row="6" Margin="0"/>
+        <ComboBox x:Name="OFF_Flashing_Type_CB" Grid.Column="1" Grid.Row="7" Margin="3, 0, 3, 0"/>
+        <Label Content="Flash Speed :" Grid.Column="1" Grid.Row="8" Margin="0"/>
+        <ComboBox x:Name="OFF_Flashing_Speed_CB" Grid.Column="1" Grid.Row="9" Margin="3, 0, 3, 0"/>
+        <Label Content="Primary Color :" Grid.Column="1" Grid.Row="10" Margin="0"/>
+        <ComboBox x:Name="OFF_Primary_Color_CB" Grid.Column="1" Grid.Row="11" Margin="3, 0, 3, 0"/>
+        <Label Content="Secondary Color :" Grid.Column="1" Grid.Row="12" Margin="0"/>
+        <ComboBox x:Name="OFF_Secondary_Color_CB" Grid.Column="1" Grid.Row="13" Margin="0, 0, 0, 4"/>
+
+        <Button x:Name="Validation_BT" Grid.Column="0" Grid.Row="14" Height="30" Content="Appliquer" Click="Validation_BT_Click" Grid.ColumnSpan="2" Margin="3"/>
+
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="15" Stroke="Black"/>
+        <Rectangle Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="1" Grid.RowSpan="9" Stroke="Black"/>
+        <Rectangle Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="9" Stroke="Black"/>
+
+    </Grid>
+</UserControl>
