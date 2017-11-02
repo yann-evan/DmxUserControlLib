@@ -18,3 +18,9 @@ C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\ob
 C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\DmxUserControlLib.csproj.GenerateResource.Cache
 C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\DmxUserControlLib.dll
 C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\DmxUserControlLib.pdb
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\APC40LedConf.g.cs
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\ChannelController.g.cs
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\MatriceLedAPC40.g.cs
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\APC40LedConf.baml
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\ChannelController.baml
+C:\Users\dev\Desktop\DMX Project\Logiciel\DmxUserControlLib\DmxUserControlLib\obj\Release\MatriceLedAPC40.baml

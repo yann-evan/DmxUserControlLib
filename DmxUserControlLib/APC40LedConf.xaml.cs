@@ -21,6 +21,7 @@ namespace DmxUserControlLib
     /// </summary>
     public partial class APC40LedConf : UserControl
     {
+
         public int ONRGBPrimaryColor = 0;
         public int ONRGBSecondaryColor = 0;
         public BlinkingType ONBlinkingType = BlinkingType.OneShot;
@@ -85,6 +86,8 @@ namespace DmxUserControlLib
 
         private void Validation_BT_Click(object sender, RoutedEventArgs e)
         {
+            Log.writeLine("Mise à jour Mapping");
+
             ONRGBPrimaryColor = (int)ON_Primary_Color_CB.SelectedItem;
             ONRGBSecondaryColor = (int)ON_Secondary_Color_CB.SelectedItem;
             ONBlinkingType = (BlinkingType)ON_Flashing_Type_CB.SelectedItem;

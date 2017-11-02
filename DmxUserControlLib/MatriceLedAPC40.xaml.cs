@@ -1,18 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Diagnostics;
+using DmxControlLib.Utility;
 
 namespace DmxUserControlLib
 {
@@ -50,7 +42,8 @@ namespace DmxUserControlLib
                 }
             }
 
-            Debug.WriteLine("BT ID -> " + BT_ID);
+            Log.writeLine("Appui Bouton IHM -> ID : " + BT_ID);
+
             if (is_BT_selected(BT_ID))
             {
                 bt.SetValue(BackgroundProperty, Brushes.White);
