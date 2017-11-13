@@ -36,7 +36,7 @@ namespace DmxUserControlLib
                     throw new ArgumentOutOfRangeException("dmx value must be between 0 and 255");
                 }
 
-                Pdmxvalue = value;
+                Pdmxvalue = value;         
             }
         }
         public int channel
@@ -54,7 +54,10 @@ namespace DmxUserControlLib
                     }
 
                     Pchannel = value;
-                    channelNumberLB.Content = Pchannel.ToString();
+                    if(channelNumberLB != null)
+                    {
+                        channelNumberLB.Content = Pchannel.ToString();
+                    }
                 }
             }
         }
@@ -82,6 +85,11 @@ namespace DmxUserControlLib
             {
                 this.DmxValue_Changed.Invoke(this, e);
             }
+        }
+
+        public void ChangeValue(int value)
+        {
+            DimmerSB.Value = 255 - value;
         }
     }
 }
